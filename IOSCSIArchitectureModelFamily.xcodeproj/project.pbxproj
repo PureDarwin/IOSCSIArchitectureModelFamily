@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39250728212E76D5001261D5 /* IOStorageProtocolCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925071B212E76D3001261D5 /* IOStorageProtocolCharacteristics.h */; };
+		3925072A212E76D5001261D5 /* IOStorageDeviceCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925071D212E76D4001261D5 /* IOStorageDeviceCharacteristics.h */; };
+		3925072F212E76D5001261D5 /* IOSCSIArchitectureModelFamilyDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250722212E76D4001261D5 /* IOSCSIArchitectureModelFamilyDebugging.h */; };
+		39250736212E7A36001261D5 /* IOSCSIPeripheralDeviceNub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39250735212E7A36001261D5 /* IOSCSIPeripheralDeviceNub.cpp */; };
+		39250743212E7A9B001261D5 /* IOSCSITargetDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39250737212E7A99001261D5 /* IOSCSITargetDevice.cpp */; };
+		39250744212E7A9B001261D5 /* SCSITask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39250738212E7A99001261D5 /* SCSITask.cpp */; };
+		39250745212E7A9B001261D5 /* IOSCSIProtocolInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39250739212E7A99001261D5 /* IOSCSIProtocolInterface.cpp */; };
+		39250746212E7A9B001261D5 /* OSHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3925073A212E7A99001261D5 /* OSHashTable.cpp */; };
+		39250747212E7A9B001261D5 /* IOSCSITargetDeviceHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3925073B212E7A9A001261D5 /* IOSCSITargetDeviceHashTable.cpp */; };
+		39250748212E7A9B001261D5 /* IOSCSIPrimaryCommandsDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3925073C212E7A9A001261D5 /* IOSCSIPrimaryCommandsDevice.cpp */; };
+		39250749212E7A9B001261D5 /* SCSILibraryRoutines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3925073D212E7A9A001261D5 /* SCSILibraryRoutines.cpp */; };
+		3925074A212E7A9B001261D5 /* SCSITargetDevicePathManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3925073E212E7A9A001261D5 /* SCSITargetDevicePathManager.cpp */; };
+		3925074B212E7A9B001261D5 /* IOSCSIProtocolServices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3925073F212E7A9A001261D5 /* IOSCSIProtocolServices.cpp */; };
+		3925074C212E7A9B001261D5 /* SCSIPrimaryCommands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39250740212E7A9B001261D5 /* SCSIPrimaryCommands.cpp */; };
+		3925074D212E7A9B001261D5 /* SCSIPathManagers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39250741212E7A9B001261D5 /* SCSIPathManagers.cpp */; };
+		3925074E212E7A9B001261D5 /* IOSCSIPrimaryCommandsBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39250742212E7A9B001261D5 /* IOSCSIPrimaryCommandsBuilder.cpp */; };
+		39250764212E7ACF001261D5 /* SCSICmds_INQUIRY_Definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925074F212E7ACA001261D5 /* SCSICmds_INQUIRY_Definitions.h */; };
+		39250765212E7ACF001261D5 /* SCSICommandOperationCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250750212E7ACA001261D5 /* SCSICommandOperationCodes.h */; };
+		39250766212E7ACF001261D5 /* IOSCSIPrimaryCommandsDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250751212E7ACA001261D5 /* IOSCSIPrimaryCommandsDevice.h */; };
+		39250767212E7ACF001261D5 /* IOSCSIProtocolServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250752212E7ACB001261D5 /* IOSCSIProtocolServices.h */; };
+		39250768212E7ACF001261D5 /* IOSCSITargetDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250753212E7ACB001261D5 /* IOSCSITargetDevice.h */; };
+		39250769212E7ACF001261D5 /* SCSIPathManagers.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250754212E7ACB001261D5 /* SCSIPathManagers.h */; };
+		3925076A212E7ACF001261D5 /* SCSICommandDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250755212E7ACB001261D5 /* SCSICommandDefinitions.h */; };
+		3925076B212E7ACF001261D5 /* SCSICmds_REPORT_LUNS_Definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250756212E7ACC001261D5 /* SCSICmds_REPORT_LUNS_Definitions.h */; };
+		3925076C212E7ACF001261D5 /* SCSIPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250757212E7ACC001261D5 /* SCSIPort.h */; };
+		3925076D212E7ACF001261D5 /* IOSCSIProtocolInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250758212E7ACC001261D5 /* IOSCSIProtocolInterface.h */; };
+		3925076E212E7ACF001261D5 /* SCSICmds_READ_CAPACITY_Definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250759212E7ACC001261D5 /* SCSICmds_READ_CAPACITY_Definitions.h */; };
+		3925076F212E7ACF001261D5 /* IOSCSITargetDeviceHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925075A212E7ACD001261D5 /* IOSCSITargetDeviceHashTable.h */; };
+		39250770212E7ACF001261D5 /* SCSICmds_REQUEST_SENSE_Defs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925075B212E7ACD001261D5 /* SCSICmds_REQUEST_SENSE_Defs.h */; };
+		39250771212E7ACF001261D5 /* SCSILibraryRoutines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925075C212E7ACD001261D5 /* SCSILibraryRoutines.h */; };
+		39250772212E7ACF001261D5 /* SCSIPrimaryCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925075D212E7ACD001261D5 /* SCSIPrimaryCommands.h */; };
+		39250773212E7ACF001261D5 /* SCSITargetDevicePathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925075E212E7ACE001261D5 /* SCSITargetDevicePathManager.h */; };
+		39250774212E7ACF001261D5 /* SCSITask.h in Headers */ = {isa = PBXBuildFile; fileRef = 3925075F212E7ACE001261D5 /* SCSITask.h */; };
+		39250775212E7ACF001261D5 /* IOSCSIPeripheralDeviceNub.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250760212E7ACE001261D5 /* IOSCSIPeripheralDeviceNub.h */; };
+		39250776212E7ACF001261D5 /* SCSICmds_MODE_Definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250761212E7ACE001261D5 /* SCSICmds_MODE_Definitions.h */; };
+		39250777212E7ACF001261D5 /* OSHashTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250762212E7ACE001261D5 /* OSHashTable.h */; };
+		39250778212E7ACF001261D5 /* SCSITaskDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 39250763212E7ACE001261D5 /* SCSITaskDefinition.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3925070D212E7552001261D5 /* IOSCSIArchitectureModelFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSCSIArchitectureModelFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		3925071A212E76D3001261D5 /* IOSCSIArchitectureModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IOSCSIArchitectureModel; sourceTree = "<group>"; };
+		3925071B212E76D3001261D5 /* IOStorageProtocolCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorageProtocolCharacteristics.h; sourceTree = "<group>"; };
+		3925071C212E76D3001261D5 /* APPLE_LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
+		3925071D212E76D4001261D5 /* IOStorageDeviceCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorageDeviceCharacteristics.h; sourceTree = "<group>"; };
+		3925071E212E76D4001261D5 /* UserClientLib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UserClientLib; sourceTree = "<group>"; };
+		39250720212E76D4001261D5 /* IOSCSIMultimediaCommands */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IOSCSIMultimediaCommands; sourceTree = "<group>"; };
+		39250721212E76D4001261D5 /* UserClient */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UserClient; sourceTree = "<group>"; };
+		39250722212E76D4001261D5 /* IOSCSIArchitectureModelFamilyDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSCSIArchitectureModelFamilyDebugging.h; sourceTree = "<group>"; };
+		39250723212E76D4001261D5 /* IOSCSIBlockCommands */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IOSCSIBlockCommands; sourceTree = "<group>"; };
+		39250725212E76D5001261D5 /* IOSCSIReducedBlockCommands */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IOSCSIReducedBlockCommands; sourceTree = "<group>"; };
+		39250726212E76D5001261D5 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
+		39250735212E7A36001261D5 /* IOSCSIPeripheralDeviceNub.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSCSIPeripheralDeviceNub.cpp; path = IOSCSIArchitectureModel/IOSCSIPeripheralDeviceNub.cpp; sourceTree = "<group>"; };
+		39250737212E7A99001261D5 /* IOSCSITargetDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSCSITargetDevice.cpp; path = IOSCSIArchitectureModel/IOSCSITargetDevice.cpp; sourceTree = "<group>"; };
+		39250738212E7A99001261D5 /* SCSITask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SCSITask.cpp; path = IOSCSIArchitectureModel/SCSITask.cpp; sourceTree = "<group>"; };
+		39250739212E7A99001261D5 /* IOSCSIProtocolInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSCSIProtocolInterface.cpp; path = IOSCSIArchitectureModel/IOSCSIProtocolInterface.cpp; sourceTree = "<group>"; };
+		3925073A212E7A99001261D5 /* OSHashTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OSHashTable.cpp; path = IOSCSIArchitectureModel/OSHashTable.cpp; sourceTree = "<group>"; };
+		3925073B212E7A9A001261D5 /* IOSCSITargetDeviceHashTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSCSITargetDeviceHashTable.cpp; path = IOSCSIArchitectureModel/IOSCSITargetDeviceHashTable.cpp; sourceTree = "<group>"; };
+		3925073C212E7A9A001261D5 /* IOSCSIPrimaryCommandsDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSCSIPrimaryCommandsDevice.cpp; path = IOSCSIArchitectureModel/IOSCSIPrimaryCommandsDevice.cpp; sourceTree = "<group>"; };
+		3925073D212E7A9A001261D5 /* SCSILibraryRoutines.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SCSILibraryRoutines.cpp; path = IOSCSIArchitectureModel/SCSILibraryRoutines.cpp; sourceTree = "<group>"; };
+		3925073E212E7A9A001261D5 /* SCSITargetDevicePathManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SCSITargetDevicePathManager.cpp; path = IOSCSIArchitectureModel/SCSITargetDevicePathManager.cpp; sourceTree = "<group>"; };
+		3925073F212E7A9A001261D5 /* IOSCSIProtocolServices.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSCSIProtocolServices.cpp; path = IOSCSIArchitectureModel/IOSCSIProtocolServices.cpp; sourceTree = "<group>"; };
+		39250740212E7A9B001261D5 /* SCSIPrimaryCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SCSIPrimaryCommands.cpp; path = IOSCSIArchitectureModel/SCSIPrimaryCommands.cpp; sourceTree = "<group>"; };
+		39250741212E7A9B001261D5 /* SCSIPathManagers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SCSIPathManagers.cpp; path = IOSCSIArchitectureModel/SCSIPathManagers.cpp; sourceTree = "<group>"; };
+		39250742212E7A9B001261D5 /* IOSCSIPrimaryCommandsBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = IOSCSIPrimaryCommandsBuilder.cpp; path = IOSCSIArchitectureModel/IOSCSIPrimaryCommandsBuilder.cpp; sourceTree = "<group>"; };
+		3925074F212E7ACA001261D5 /* SCSICmds_INQUIRY_Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSICmds_INQUIRY_Definitions.h; path = IOSCSIArchitectureModel/SCSICmds_INQUIRY_Definitions.h; sourceTree = "<group>"; };
+		39250750212E7ACA001261D5 /* SCSICommandOperationCodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSICommandOperationCodes.h; path = IOSCSIArchitectureModel/SCSICommandOperationCodes.h; sourceTree = "<group>"; };
+		39250751212E7ACA001261D5 /* IOSCSIPrimaryCommandsDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOSCSIPrimaryCommandsDevice.h; path = IOSCSIArchitectureModel/IOSCSIPrimaryCommandsDevice.h; sourceTree = "<group>"; };
+		39250752212E7ACB001261D5 /* IOSCSIProtocolServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOSCSIProtocolServices.h; path = IOSCSIArchitectureModel/IOSCSIProtocolServices.h; sourceTree = "<group>"; };
+		39250753212E7ACB001261D5 /* IOSCSITargetDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOSCSITargetDevice.h; path = IOSCSIArchitectureModel/IOSCSITargetDevice.h; sourceTree = "<group>"; };
+		39250754212E7ACB001261D5 /* SCSIPathManagers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSIPathManagers.h; path = IOSCSIArchitectureModel/SCSIPathManagers.h; sourceTree = "<group>"; };
+		39250755212E7ACB001261D5 /* SCSICommandDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSICommandDefinitions.h; path = IOSCSIArchitectureModel/SCSICommandDefinitions.h; sourceTree = "<group>"; };
+		39250756212E7ACC001261D5 /* SCSICmds_REPORT_LUNS_Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSICmds_REPORT_LUNS_Definitions.h; path = IOSCSIArchitectureModel/SCSICmds_REPORT_LUNS_Definitions.h; sourceTree = "<group>"; };
+		39250757212E7ACC001261D5 /* SCSIPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSIPort.h; path = IOSCSIArchitectureModel/SCSIPort.h; sourceTree = "<group>"; };
+		39250758212E7ACC001261D5 /* IOSCSIProtocolInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOSCSIProtocolInterface.h; path = IOSCSIArchitectureModel/IOSCSIProtocolInterface.h; sourceTree = "<group>"; };
+		39250759212E7ACC001261D5 /* SCSICmds_READ_CAPACITY_Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSICmds_READ_CAPACITY_Definitions.h; path = IOSCSIArchitectureModel/SCSICmds_READ_CAPACITY_Definitions.h; sourceTree = "<group>"; };
+		3925075A212E7ACD001261D5 /* IOSCSITargetDeviceHashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOSCSITargetDeviceHashTable.h; path = IOSCSIArchitectureModel/IOSCSITargetDeviceHashTable.h; sourceTree = "<group>"; };
+		3925075B212E7ACD001261D5 /* SCSICmds_REQUEST_SENSE_Defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSICmds_REQUEST_SENSE_Defs.h; path = IOSCSIArchitectureModel/SCSICmds_REQUEST_SENSE_Defs.h; sourceTree = "<group>"; };
+		3925075C212E7ACD001261D5 /* SCSILibraryRoutines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSILibraryRoutines.h; path = IOSCSIArchitectureModel/SCSILibraryRoutines.h; sourceTree = "<group>"; };
+		3925075D212E7ACD001261D5 /* SCSIPrimaryCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSIPrimaryCommands.h; path = IOSCSIArchitectureModel/SCSIPrimaryCommands.h; sourceTree = "<group>"; };
+		3925075E212E7ACE001261D5 /* SCSITargetDevicePathManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSITargetDevicePathManager.h; path = IOSCSIArchitectureModel/SCSITargetDevicePathManager.h; sourceTree = "<group>"; };
+		3925075F212E7ACE001261D5 /* SCSITask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSITask.h; path = IOSCSIArchitectureModel/SCSITask.h; sourceTree = "<group>"; };
+		39250760212E7ACE001261D5 /* IOSCSIPeripheralDeviceNub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IOSCSIPeripheralDeviceNub.h; path = IOSCSIArchitectureModel/IOSCSIPeripheralDeviceNub.h; sourceTree = "<group>"; };
+		39250761212E7ACE001261D5 /* SCSICmds_MODE_Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSICmds_MODE_Definitions.h; path = IOSCSIArchitectureModel/SCSICmds_MODE_Definitions.h; sourceTree = "<group>"; };
+		39250762212E7ACE001261D5 /* OSHashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OSHashTable.h; path = IOSCSIArchitectureModel/OSHashTable.h; sourceTree = "<group>"; };
+		39250763212E7ACE001261D5 /* SCSITaskDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCSITaskDefinition.h; path = IOSCSIArchitectureModel/SCSITaskDefinition.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39250709212E7552001261D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39250703212E7552001261D5 = {
+			isa = PBXGroup;
+			children = (
+				39250760212E7ACE001261D5 /* IOSCSIPeripheralDeviceNub.h */,
+				39250751212E7ACA001261D5 /* IOSCSIPrimaryCommandsDevice.h */,
+				39250758212E7ACC001261D5 /* IOSCSIProtocolInterface.h */,
+				39250752212E7ACB001261D5 /* IOSCSIProtocolServices.h */,
+				39250753212E7ACB001261D5 /* IOSCSITargetDevice.h */,
+				3925075A212E7ACD001261D5 /* IOSCSITargetDeviceHashTable.h */,
+				39250762212E7ACE001261D5 /* OSHashTable.h */,
+				3925074F212E7ACA001261D5 /* SCSICmds_INQUIRY_Definitions.h */,
+				39250761212E7ACE001261D5 /* SCSICmds_MODE_Definitions.h */,
+				39250759212E7ACC001261D5 /* SCSICmds_READ_CAPACITY_Definitions.h */,
+				39250756212E7ACC001261D5 /* SCSICmds_REPORT_LUNS_Definitions.h */,
+				3925075B212E7ACD001261D5 /* SCSICmds_REQUEST_SENSE_Defs.h */,
+				39250755212E7ACB001261D5 /* SCSICommandDefinitions.h */,
+				39250750212E7ACA001261D5 /* SCSICommandOperationCodes.h */,
+				3925075C212E7ACD001261D5 /* SCSILibraryRoutines.h */,
+				39250754212E7ACB001261D5 /* SCSIPathManagers.h */,
+				39250757212E7ACC001261D5 /* SCSIPort.h */,
+				3925075D212E7ACD001261D5 /* SCSIPrimaryCommands.h */,
+				3925075E212E7ACE001261D5 /* SCSITargetDevicePathManager.h */,
+				3925075F212E7ACE001261D5 /* SCSITask.h */,
+				39250763212E7ACE001261D5 /* SCSITaskDefinition.h */,
+				39250742212E7A9B001261D5 /* IOSCSIPrimaryCommandsBuilder.cpp */,
+				3925073C212E7A9A001261D5 /* IOSCSIPrimaryCommandsDevice.cpp */,
+				39250739212E7A99001261D5 /* IOSCSIProtocolInterface.cpp */,
+				3925073F212E7A9A001261D5 /* IOSCSIProtocolServices.cpp */,
+				39250737212E7A99001261D5 /* IOSCSITargetDevice.cpp */,
+				3925073B212E7A9A001261D5 /* IOSCSITargetDeviceHashTable.cpp */,
+				3925073A212E7A99001261D5 /* OSHashTable.cpp */,
+				3925073D212E7A9A001261D5 /* SCSILibraryRoutines.cpp */,
+				39250741212E7A9B001261D5 /* SCSIPathManagers.cpp */,
+				39250740212E7A9B001261D5 /* SCSIPrimaryCommands.cpp */,
+				3925073E212E7A9A001261D5 /* SCSITargetDevicePathManager.cpp */,
+				39250738212E7A99001261D5 /* SCSITask.cpp */,
+				39250735212E7A36001261D5 /* IOSCSIPeripheralDeviceNub.cpp */,
+				3925071C212E76D3001261D5 /* APPLE_LICENSE */,
+				39250726212E76D5001261D5 /* Icons */,
+				3925071A212E76D3001261D5 /* IOSCSIArchitectureModel */,
+				39250722212E76D4001261D5 /* IOSCSIArchitectureModelFamilyDebugging.h */,
+				39250723212E76D4001261D5 /* IOSCSIBlockCommands */,
+				39250720212E76D4001261D5 /* IOSCSIMultimediaCommands */,
+				39250725212E76D5001261D5 /* IOSCSIReducedBlockCommands */,
+				3925071D212E76D4001261D5 /* IOStorageDeviceCharacteristics.h */,
+				3925071B212E76D3001261D5 /* IOStorageProtocolCharacteristics.h */,
+				39250721212E76D4001261D5 /* UserClient */,
+				3925071E212E76D4001261D5 /* UserClientLib */,
+				3925070E212E7552001261D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3925070E212E7552001261D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3925070D212E7552001261D5 /* IOSCSIArchitectureModelFamily.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3925070A212E7552001261D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3925072A212E76D5001261D5 /* IOStorageDeviceCharacteristics.h in Headers */,
+				3925072F212E76D5001261D5 /* IOSCSIArchitectureModelFamilyDebugging.h in Headers */,
+				39250764212E7ACF001261D5 /* SCSICmds_INQUIRY_Definitions.h in Headers */,
+				39250765212E7ACF001261D5 /* SCSICommandOperationCodes.h in Headers */,
+				39250766212E7ACF001261D5 /* IOSCSIPrimaryCommandsDevice.h in Headers */,
+				39250767212E7ACF001261D5 /* IOSCSIProtocolServices.h in Headers */,
+				39250768212E7ACF001261D5 /* IOSCSITargetDevice.h in Headers */,
+				39250769212E7ACF001261D5 /* SCSIPathManagers.h in Headers */,
+				3925076A212E7ACF001261D5 /* SCSICommandDefinitions.h in Headers */,
+				3925076B212E7ACF001261D5 /* SCSICmds_REPORT_LUNS_Definitions.h in Headers */,
+				3925076C212E7ACF001261D5 /* SCSIPort.h in Headers */,
+				3925076D212E7ACF001261D5 /* IOSCSIProtocolInterface.h in Headers */,
+				3925076E212E7ACF001261D5 /* SCSICmds_READ_CAPACITY_Definitions.h in Headers */,
+				3925076F212E7ACF001261D5 /* IOSCSITargetDeviceHashTable.h in Headers */,
+				39250770212E7ACF001261D5 /* SCSICmds_REQUEST_SENSE_Defs.h in Headers */,
+				39250771212E7ACF001261D5 /* SCSILibraryRoutines.h in Headers */,
+				39250772212E7ACF001261D5 /* SCSIPrimaryCommands.h in Headers */,
+				39250773212E7ACF001261D5 /* SCSITargetDevicePathManager.h in Headers */,
+				39250774212E7ACF001261D5 /* SCSITask.h in Headers */,
+				39250775212E7ACF001261D5 /* IOSCSIPeripheralDeviceNub.h in Headers */,
+				39250776212E7ACF001261D5 /* SCSICmds_MODE_Definitions.h in Headers */,
+				39250777212E7ACF001261D5 /* OSHashTable.h in Headers */,
+				39250778212E7ACF001261D5 /* SCSITaskDefinition.h in Headers */,
+				39250728212E76D5001261D5 /* IOStorageProtocolCharacteristics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3925070C212E7552001261D5 /* IOSCSIArchitectureModelFamily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39250717212E7552001261D5 /* Build configuration list for PBXNativeTarget "IOSCSIArchitectureModelFamily" */;
+			buildPhases = (
+				39250708212E7552001261D5 /* Sources */,
+				39250709212E7552001261D5 /* Frameworks */,
+				3925070A212E7552001261D5 /* Headers */,
+				3925070B212E7552001261D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSCSIArchitectureModelFamily;
+			productName = IOSCSIArchitectureModelFamily;
+			productReference = 3925070D212E7552001261D5 /* IOSCSIArchitectureModelFamily.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39250704212E7552001261D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3925070C212E7552001261D5 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 39250707212E7552001261D5 /* Build configuration list for PBXProject "IOSCSIArchitectureModelFamily" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 39250703212E7552001261D5;
+			productRefGroup = 3925070E212E7552001261D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3925070C212E7552001261D5 /* IOSCSIArchitectureModelFamily */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3925070B212E7552001261D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39250708212E7552001261D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39250736212E7A36001261D5 /* IOSCSIPeripheralDeviceNub.cpp in Sources */,
+				39250743212E7A9B001261D5 /* IOSCSITargetDevice.cpp in Sources */,
+				39250744212E7A9B001261D5 /* SCSITask.cpp in Sources */,
+				39250745212E7A9B001261D5 /* IOSCSIProtocolInterface.cpp in Sources */,
+				39250746212E7A9B001261D5 /* OSHashTable.cpp in Sources */,
+				39250747212E7A9B001261D5 /* IOSCSITargetDeviceHashTable.cpp in Sources */,
+				39250748212E7A9B001261D5 /* IOSCSIPrimaryCommandsDevice.cpp in Sources */,
+				39250749212E7A9B001261D5 /* SCSILibraryRoutines.cpp in Sources */,
+				3925074A212E7A9B001261D5 /* SCSITargetDevicePathManager.cpp in Sources */,
+				3925074B212E7A9B001261D5 /* IOSCSIProtocolServices.cpp in Sources */,
+				3925074C212E7A9B001261D5 /* SCSIPrimaryCommands.cpp in Sources */,
+				3925074D212E7A9B001261D5 /* SCSIPathManagers.cpp in Sources */,
+				3925074E212E7A9B001261D5 /* IOSCSIPrimaryCommandsBuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		39250715212E7552001261D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.13.internal;
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Debug;
+		};
+		39250716212E7552001261D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.13.internal;
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Release;
+		};
+		39250718212E7552001261D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				INFOPLIST_FILE = IOSCSIArchitectureModelFamily/Info.plist;
+				MODULE_NAME = com.apple.IOSCSIArchitectureModelFamily;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.IOSCSIArchitectureModelFamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		39250719212E7552001261D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				INFOPLIST_FILE = IOSCSIArchitectureModelFamily/Info.plist;
+				MODULE_NAME = com.apple.IOSCSIArchitectureModelFamily;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.IOSCSIArchitectureModelFamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39250707212E7552001261D5 /* Build configuration list for PBXProject "IOSCSIArchitectureModelFamily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39250715212E7552001261D5 /* Debug */,
+				39250716212E7552001261D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39250717212E7552001261D5 /* Build configuration list for PBXNativeTarget "IOSCSIArchitectureModelFamily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39250718212E7552001261D5 /* Debug */,
+				39250719212E7552001261D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39250704212E7552001261D5 /* Project object */;
+}
